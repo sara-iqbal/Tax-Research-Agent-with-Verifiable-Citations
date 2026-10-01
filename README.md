@@ -2,8 +2,6 @@
 
 **A question-answering tool for UK VAT guidance that shows its sources, proves its quotes are real, and says "I don't know" when it doesn't know.**
 
-[Live dashboard](https://YOUR-USERNAME.github.io/tax-research-agent/) · [Notebook](notebooks/Tax_Research_Agent.ipynb)
-
 > Not tax advice. Guidance changes; always check GOV.UK.
 
 ## The story
