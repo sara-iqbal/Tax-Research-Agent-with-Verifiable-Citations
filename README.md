@@ -46,7 +46,9 @@ Each page is cut into small sections. Each section keeps its heading and a link,
 
 The "is this covered?" threshold was set in advance and not tuned on the answers.
 
-**Results:** run the notebook, then copy the numbers into this section. The dashboard reads `docs/results.json` and shows every question with its answer and quote.
+## Result
+
+https://sara-iqbal.github.io/Tax-Research-Agent-with-Verifiable-Citations/
 
 ## Run it
 
