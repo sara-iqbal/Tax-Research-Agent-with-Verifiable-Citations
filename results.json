@@ -1,0 +1,274 @@
+{
+  "generated": "2026-10-01T13:15:01",
+  "metrics": {
+    "questions": 18,
+    "answerable": 13,
+    "unanswerable": 5,
+    "k": 5,
+    "coverage_min": 0.6,
+    "retrieval_hit_rate": 0.923,
+    "answer_rate": 0.923,
+    "abstention_accuracy": 1.0,
+    "citation_validity": 0.75,
+    "overall_accuracy": 0.722,
+    "mode": "abstain, quote"
+  },
+  "sources": [
+    {
+      "title": "VAT guide (VAT Notice 700)",
+      "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
+    },
+    {
+      "title": "Business entertainment (VAT Notice 700/65)",
+      "url": "https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065"
+    },
+    {
+      "title": "VAT domestic reverse charge: if you buy building and construction services",
+      "url": "https://www.gov.uk/guidance/how-to-use-the-vat-reverse-charge-if-you-buy-building-and-construction-services"
+    },
+    {
+      "title": "VAT domestic reverse charge: if you supply building and construction services",
+      "url": "https://www.gov.uk/guidance/how-to-use-the-vat-reverse-charge-if-you-supply-building-and-construction-services"
+    },
+    {
+      "title": "HMRC manual VATREVCON22000: scope of the construction reverse charge",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/vat-reverse-charge-for-building-and-construction-services-manual/vatrevcon22000"
+    }
+  ],
+  "rows": [
+    {
+      "question": "Can I reclaim VAT on a meal with a UK client?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": false,
+      "top_source": "vat-guide-700",
+      "answer": "Generally, it\u2019s only advantageous to treat a payment as a disbursement for VAT purposes where no VAT is chargeable on the supply by the third party, or where your client is not entitled to reclaim it as input tax. If you treat a payment for a standard-rated supply as a disbursement for VAT purposes, you may not reclaim input tax on the supply because it has not been made to you.",
+      "citations": [
+        {
+          "title": "VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700#disbursements-for-vat-purposes",
+          "quote": "Generally, it\u2019s only advantageous to treat a payment as a disbursement for VAT purposes where no VAT is chargeable on the supply by the third party, or where your client is not entitled to reclaim it as input tax. If you treat a payment for a standard-rated supply as a disbursement for VAT purposes, you may not reclaim input tax on the supply because it has not been made to you."
+        }
+      ]
+    },
+    {
+      "question": "Is input tax on business entertainment recoverable?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "business-entertainment-700-65",
+      "answer": "VAT incurred on the entertainment of overseas customers may be recoverable when incurred for the purpose of the business if it\u2019s reasonable in scale and character. However, there will be an output tax charge if there is a \u2018private benefit\u2019 to the individual enjoying the entertainment which will cancel out any recoverable input tax.",
+      "citations": [
+        {
+          "title": "Business entertainment (VAT Notice 700/65)",
+          "url": "https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065#para2-6",
+          "quote": "VAT incurred on the entertainment of overseas customers may be recoverable when incurred for the purpose of the business if it\u2019s reasonable in scale and character. However, there will be an output tax charge if there is a \u2018private benefit\u2019 to the individual enjoying the entertainment which will cancel out any recoverable input tax."
+        }
+      ]
+    },
+    {
+      "question": "What counts as entertainment for VAT purposes?",
+      "kind": "answerable",
+      "abstained": true,
+      "correct": false,
+      "top_source": "vat-guide-700",
+      "answer": "I could not find this in the documents I have.",
+      "citations": []
+    },
+    {
+      "question": "Can VAT be recovered when entertaining overseas customers?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "business-entertainment-700-65",
+      "answer": "The term \u2018overseas customer\u2019 means any customer not ordinarily resident or carrying on a business in the UK, including the Isle of Man. VAT incurred on the entertainment of overseas customers may be recoverable when incurred for the purpose of the business if it\u2019s reasonable in scale and character.",
+      "citations": [
+        {
+          "title": "Business entertainment (VAT Notice 700/65)",
+          "url": "https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065#para2-6",
+          "quote": "The term \u2018overseas customer\u2019 means any customer not ordinarily resident or carrying on a business in the UK, including the Isle of Man. VAT incurred on the entertainment of overseas customers may be recoverable when incurred for the purpose of the business if it\u2019s reasonable in scale and character."
+        }
+      ]
+    },
+    {
+      "question": "Is employee entertainment treated differently from business entertainment?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": false,
+      "top_source": "business-entertainment-700-65",
+      "answer": "You cannot recover input tax incurred on the provision of business entertainment expenses. Business entertainment is different from employee entertainment.",
+      "citations": [
+        {
+          "title": "Business entertainment (VAT Notice 700/65)",
+          "url": "https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065#business-entertainment-and-vat",
+          "quote": "You cannot recover input tax incurred on the provision of business entertainment expenses. Business entertainment is different from employee entertainment."
+        }
+      ]
+    },
+    {
+      "question": "When must I use the domestic reverse charge if I buy construction services?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "reverse-charge-buy",
+      "answer": "Find out if you need to account for the reverse charge if you receive building and construction services and how to do this. You must use the reverse charge if you\u2019re VAT registered in the UK, buy building and construction industry services and: payment for the supply is reported within the Construction Industry Scheme (CIS) the supply is standard or reduced rated \u2014 you can find out more in Buildings and construction (VAT Notice 708) are not hiring either staff or workers, or both you\u2019re not using the end user or intermediary exclusions",
+      "citations": [
+        {
+          "title": "VAT domestic reverse charge: if you buy building and construction services",
+          "url": "https://www.gov.uk/guidance/how-to-use-the-vat-reverse-charge-if-you-buy-building-and-construction-services",
+          "quote": "Find out if you need to account for the reverse charge if you receive building and construction services and how to do this. You must use the reverse charge if you\u2019re VAT registered in the UK, buy building and construction industry services and: payment for the supply is reported within the Construction Industry Scheme (CIS) the supply is standard or reduced rated \u2014 you can find out more in Buildings and construction (VAT Notice 708) are not hiring either staff or workers, or both you\u2019re not using the end user or intermediary exclusions"
+        }
+      ]
+    },
+    {
+      "question": "Do I need to check my supplier's VAT number for the reverse charge?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": false,
+      "top_source": "reverse-charge-buy",
+      "answer": "Check if your supplier has a valid VAT number. Check if you\u2019re an end user or intermediary supplier, if you are you can choose to notify this to your supplier in writing, in which case the reverse charge will not apply \u2014 read about \u2018end users\u2019 in the VAT reverse charge technical guide .",
+      "citations": [
+        {
+          "title": "VAT domestic reverse charge: if you buy building and construction services",
+          "url": "https://www.gov.uk/guidance/how-to-use-the-vat-reverse-charge-if-you-buy-building-and-construction-services#find-out-if-you-need-to-use-the-reverse-charge",
+          "quote": "Check if your supplier has a valid VAT number. Check if you\u2019re an end user or intermediary supplier, if you are you can choose to notify this to your supplier in writing, in which case the reverse charge will not apply \u2014 read about \u2018end users\u2019 in the VAT reverse charge technical guide ."
+        }
+      ]
+    },
+    {
+      "question": "When must I use the reverse charge if I supply building and construction services?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "reverse-charge-buy",
+      "answer": "Find out if you need to account for the reverse charge if you receive building and construction services and how to do this. You must use the reverse charge if you\u2019re VAT registered in the UK, buy building and construction industry services and: payment for the supply is reported within the Construction Industry Scheme (CIS) the supply is standard or reduced rated \u2014 you can find out more in Buildings and construction (VAT Notice 708) are not hiring either staff or workers, or both you\u2019re not using the end user or intermediary exclusions",
+      "citations": [
+        {
+          "title": "VAT domestic reverse charge: if you buy building and construction services",
+          "url": "https://www.gov.uk/guidance/how-to-use-the-vat-reverse-charge-if-you-buy-building-and-construction-services",
+          "quote": "Find out if you need to account for the reverse charge if you receive building and construction services and how to do this. You must use the reverse charge if you\u2019re VAT registered in the UK, buy building and construction industry services and: payment for the supply is reported within the Construction Industry Scheme (CIS) the supply is standard or reduced rated \u2014 you can find out more in Buildings and construction (VAT Notice 708) are not hiring either staff or workers, or both you\u2019re not using the end user or intermediary exclusions"
+        }
+      ]
+    },
+    {
+      "question": "Does the reverse charge apply if my customer is an end user?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "reverse-charge-buy",
+      "answer": "Check the list of services that must use the reverse charge . Check if you\u2019re an end user or intermediary supplier, if you are you can choose to notify this to your supplier in writing, in which case the reverse charge will not apply \u2014 read about \u2018end users\u2019 in the VAT reverse charge technical guide .",
+      "citations": [
+        {
+          "title": "VAT domestic reverse charge: if you buy building and construction services",
+          "url": "https://www.gov.uk/guidance/how-to-use-the-vat-reverse-charge-if-you-buy-building-and-construction-services#find-out-if-you-need-to-use-the-reverse-charge",
+          "quote": "Check the list of services that must use the reverse charge . Check if you\u2019re an end user or intermediary supplier, if you are you can choose to notify this to your supplier in writing, in which case the reverse charge will not apply \u2014 read about \u2018end users\u2019 in the VAT reverse charge technical guide ."
+        }
+      ]
+    },
+    {
+      "question": "Which services are covered by the construction reverse charge?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "vatrevcon22000",
+      "answer": "The reverse charge must be used (subject to end user or intermediary status \u2013 see VATREVCON33000 ) for supplies of standard and reduced rate VAT services: between two businesses who are both registered (or required to be registered) for VAT in the UK, and reported within the Construction Industry Scheme (the scope of the CIS can be found at CISR14020 ). Traders must use the reverse charge for the services listed below (subject to end user or intermediary status \u2013 see VATREVCON33000 ) when they are supplied from one VAT registered business (or business that is required to be VAT registered) to ",
+      "citations": [
+        {
+          "title": "HMRC manual VATREVCON22000: scope of the construction reverse charge",
+          "url": "https://www.gov.uk/hmrc-internal-manuals/vat-reverse-charge-for-building-and-construction-services-manual/vatrevcon22000",
+          "quote": "The reverse charge must be used (subject to end user or intermediary status \u2013 see VATREVCON33000 ) for supplies of standard and reduced rate VAT services: between two businesses who are both registered (or required to be registered) for VAT in the UK, and reported within the Construction Industry Scheme (the scope of the CIS can be found at CISR14020 ). Traders must use the reverse charge for the services listed below (subject to end user or intermediary status \u2013 see VATREVCON33000 ) when they are supplied from one VAT registered business (or business that is required to be VAT registered) to "
+        }
+      ]
+    },
+    {
+      "question": "How do I fill in and submit my VAT return?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "vat-guide-700",
+      "answer": "You can get help on completing your VAT Return read the VAT Returns guide . For more information read How to fill in and submit your VAT Return (VAT Notice 700/12) , which contains a checklist to help you check that your return is complete and correct.",
+      "citations": [
+        {
+          "title": "VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700#how-to-fill-in-your-vat-return",
+          "quote": "You can get help on completing your VAT Return read the VAT Returns guide . For more information read How to fill in and submit your VAT Return (VAT Notice 700/12) , which contains a checklist to help you check that your return is complete and correct."
+        }
+      ]
+    },
+    {
+      "question": "Which law governs VAT in the UK?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": false,
+      "top_source": "vat-guide-700",
+      "answer": "VAT law in the UK is governed mainly by the Value Added Tax Act 1994 as amended by subsequent Finance Acts. This notice and the other VAT notices explain how HMRC interprets the VAT law.",
+      "citations": [
+        {
+          "title": "VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700#vat-law",
+          "quote": "VAT law in the UK is governed mainly by the Value Added Tax Act 1994 as amended by subsequent Finance Acts. This notice and the other VAT notices explain how HMRC interprets the VAT law."
+        }
+      ]
+    },
+    {
+      "question": "How long must I keep VAT records?",
+      "kind": "answerable",
+      "abstained": false,
+      "correct": true,
+      "top_source": "vat-guide-700",
+      "answer": "No matter how you keep your records they must show the above totals. You must also keep a record of: credits received from suppliers for all taxable supplies you receive (read paragraph 19.8 ) supplies you receive for your business on which VAT is not deductible (read paragraph 19.6.2 ) If you\u2019re partly exempt ( paragraph 13.1 ) read Partial exemption (VAT Notice 706) .",
+      "citations": [
+        {
+          "title": "VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700#recording-supplies-you-receive",
+          "quote": "No matter how you keep your records they must show the above totals. You must also keep a record of: credits received from suppliers for all taxable supplies you receive (read paragraph 19.8 ) supplies you receive for your business on which VAT is not deductible (read paragraph 19.6.2 ) If you\u2019re partly exempt ( paragraph 13.1 ) read Partial exemption (VAT Notice 706) ."
+        }
+      ]
+    },
+    {
+      "question": "What is the main rate of corporation tax?",
+      "kind": "unanswerable",
+      "abstained": true,
+      "correct": true,
+      "top_source": "vat-guide-700",
+      "answer": "I could not find this in the documents I have.",
+      "citations": []
+    },
+    {
+      "question": "How does R&D tax relief work for small companies?",
+      "kind": "unanswerable",
+      "abstained": true,
+      "correct": true,
+      "top_source": "vat-guide-700",
+      "answer": "I could not find this in the documents I have.",
+      "citations": []
+    },
+    {
+      "question": "What is the capital gains tax annual allowance?",
+      "kind": "unanswerable",
+      "abstained": true,
+      "correct": true,
+      "top_source": "vat-guide-700",
+      "answer": "I could not find this in the documents I have.",
+      "citations": []
+    },
+    {
+      "question": "How are dividends taxed for company directors?",
+      "kind": "unanswerable",
+      "abstained": true,
+      "correct": true,
+      "top_source": "business-entertainment-700-65",
+      "answer": "I could not find this in the documents I have.",
+      "citations": []
+    },
+    {
+      "question": "What is the rate of employer National Insurance?",
+      "kind": "unanswerable",
+      "abstained": true,
+      "correct": true,
+      "top_source": "reverse-charge-supply",
+      "answer": "I could not find this in the documents I have.",
+      "citations": []
+    }
+  ]
+}
