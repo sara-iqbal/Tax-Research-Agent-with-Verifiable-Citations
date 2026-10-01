@@ -1,0 +1,33 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tax Research Agent</title><style>
+:root{--bg:#fff;--fg:#1c2530;--mut:#5d6b7a;--card:#f3f6f9;--acc:#1f5fbf;--ok:#0b6e4f;--no:#b3261e;--line:#dde3ea}
+@media(prefers-color-scheme:dark){:root{--bg:#12181f;--fg:#e8edf2;--mut:#9aa8b6;--card:#1b242e;--acc:#7ab0ff;--ok:#4cc38a;--no:#ff8a80;--line:#2b3744}}
+body{margin:0;font:16px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--fg)}main{max-width:900px;margin:auto;padding:24px 16px}
+h1{margin:0}h2{margin-top:32px}.mut{color:var(--mut)}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:16px}
+.kpi{background:var(--card);border-radius:10px;padding:14px}.kpi b{display:block;font-size:26px;color:var(--acc)}
+details{background:var(--card);border-radius:8px;padding:10px 12px;margin:8px 0}summary{cursor:pointer}
+.tag{font-size:12px;border-radius:99px;padding:1px 8px;border:1px solid currentColor;margin-right:6px}.ok{color:var(--ok)}.no{color:var(--no)}
+blockquote{margin:8px 0;padding-left:10px;border-left:3px solid var(--acc);color:var(--mut)}a{color:var(--acc)}
+</style></head><body><main>
+<h1>Tax Research Agent</h1>
+<p class="mut">Answers UK VAT questions from public GOV.UK guidance, shows the exact quote it relied on, and says "I don't know" when the documents don't cover the question.</p>
+<div id="app"><p class="mut">Loading results…</p></div>
+<h2>How it works</h2>
+<ol><li><b>Search</b> the guidance for the most relevant sections.</li><li><b>Check</b> the sections really cover the question. If not, abstain.</li>
+<li><b>Answer</b> from those sections only.</li><li><b>Verify</b> every quote appears word for word in the cited section.</li></ol>
+<p class="mut" style="font-size:14px">Not tax advice. Guidance changes; check GOV.UK. Small test set, so scores are a demonstration.</p>
+<script>
+const pct=x=>x==null?"n/a":Math.round(x*100)+"%",el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+fetch("results.json").then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
+ const app=document.getElementById("app");app.textContent="";const m=d.metrics;
+ const k=el("div","kpis");[["Correct documents found",pct(m.retrieval_hit_rate)],["Answered when it should",pct(m.answer_rate)],["Refused when it should",pct(m.abstention_accuracy)],["Quotes verified",pct(m.citation_validity)]]
+  .forEach(([l,v])=>{const c=el("div","kpi");c.append(el("b",null,v),document.createTextNode(l));k.append(c)});app.append(k);
+ app.append(el("p","mut",`${m.questions} test questions (${m.answerable} answerable, ${m.unanswerable} not covered by the documents). Run on ${d.generated}.`));
+ app.append(el("h2",null,"Every test question"));
+ d.rows.forEach(r=>{const dt=el("details"),s=el("summary");
+  s.append(el("span","tag "+(r.correct?"ok":"no"),r.correct?"correct":"wrong"),el("span","tag mut",r.abstained?"abstained":"answered"),document.createTextNode(r.question));
+  dt.append(s,el("p",null,r.answer));
+  r.citations.forEach(c=>{const b=el("blockquote",null,"“"+c.quote+"”"),a=el("a",null,c.title);a.href=c.url;a.target="_blank";a.rel="noopener";b.append(document.createElement("br"),a);dt.append(b)});
+  app.append(dt)});
+}).catch(()=>{document.getElementById("app").innerHTML="<p><b>No results yet.</b> Run the notebook in Colab, download <code>results.json</code>, and put it in this folder.</p>"});
+</script></main></body></html>
